@@ -1,0 +1,149 @@
+:root{
+    --bg-color: rgb(43, 42, 42);
+    --accent-color: #5b8c3b;
+    --font-color: #8aff8c;
+    --hero-color: #91bf4f;
+    --yellow: #f3ff8a;
+    --title-color: #c2e580;
+
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace
+
+}
+
+h1{
+    color: var(--font-color);
+}
+
+h3{
+    color:var(--title-color);
+}
+.title{
+    text-align: center;
+    color: var(--title-color);
+    padding: 20px;
+}
+
+.card{
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    width: 375px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+#result-card{
+    display: none;
+}
+
+p{
+    padding: 10px;
+}
+
+.scoreNeeded{
+    padding: 30px 15px;
+    margin: 10px;
+    border: 1px solid var(--font-color);
+    border-radius: 50%;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 70%;
+}
+select{
+    padding: 5px 10px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid var(--hero-color);
+    color: var(--font-color);
+    font-size: 15px;
+}
+select:focus{
+        border: 2px solid green;
+    color: lime;
+}
+
+select option{
+    background-color: black;
+}
+input{
+    padding: 5px 10px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid var(--accent-color);
+    color: var(--hero-color);
+    font-size: 15px;
+
+}
+
+input:focus{
+    border: 2px solid green;
+    color: lime;
+}
+
+button{
+    padding: 10px 30px;
+    background-color: var(--accent-color);
+    color: var(--font-color);
+    border:1px solid var(--hero-color);
+    border-radius: 10px;
+    outline:none;
+    font-size: 15px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--bg-color);
+    border: 1px solid var(--font-color);
+    color: var(--accent-color);
+}
+
+h2{
+    padding: 20px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#score {
+    color: var(--yellow);
+}
+
+p{
+    text-align: center;
+}
+
+a:visited, a:link {
+    color: white;
+}

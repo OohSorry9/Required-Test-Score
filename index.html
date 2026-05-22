@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Required Test Score Calculator -- By ShahBhai</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+            <div class="title">
+                <h1>Calculate your required Test score</h1>
+                <h3>(based on 2025 NED merit List)</h3>
+            </div>
+            
+    <div class="card" id="main-card">
+        <h2>Enter Your Details</h2>
+        <div class="input-container">
+            <label for="XI"> XI Percentage %: </label>
+            <input type="number" name="XI" id="XI" placeholder="Enter Xi Percentage">
+            <label for="fieldSelect">Select Your Desired Field</label>
+             <select id="fieldSelect">
+  <option value="">Select Field</option>
+
+  <option value="Management Sciences">Management Sciences</option>
+  <option value="Metallurgical Engineering">Metallurgical Engineering</option>
+  <option value="Polymer & Petroleum Engineering">Polymer & Petroleum Engineering</option>
+  <option value="Applied Physics">Applied Physics</option>
+  <option value="Development Studies">Development Studies</option>
+  <option value="Economics & Finance">Economics & Finance</option>
+  <option value="English Linguistics">English Linguistics</option>
+  <option value="Industrial Chemistry">Industrial Chemistry</option>
+  <option value="Textile Sciences">Textile Sciences</option>
+  <option value="Civil Engineering (Thar Campus)">Civil Engineering (Thar Campus)</option>
+  <option value="Computer Science (Thar Campus)">Computer Science (Thar Campus)</option>
+
+  <option value="Computational Finance">Computational Finance</option>
+  <option value="Telecommunication Engineering">Telecommunication Engineering</option>
+  <option value="Civil Engineering">Civil Engineering</option>
+  <option value="Textile Engineering">Textile Engineering</option>
+  <option value="Food Engineering">Food Engineering</option>
+  <option value="Architecture">Architecture</option>
+  <option value="Construction Engineering">Construction Engineering</option>
+  <option value="Petroleum Engineering">Petroleum Engineering</option>
+  <option value="Urban Engineering">Urban Engineering</option>
+  <option value="Biomedical Engineering">Biomedical Engineering</option>
+  <option value="Materials Engineering">Materials Engineering</option>
+  <option value="Automotive Engineering">Automotive Engineering</option>
+
+  <option value="Software Engineering">Software Engineering</option>
+  <option value="Computer Systems Engineering">Computer Systems Engineering</option>
+  <option value="Computer Science & Information Technology">Computer Science & Information Technology</option>
+
+  <option value="Electrical Engineering">Electrical Engineering</option>
+  <option value="Electronic Engineering">Electronic Engineering</option>
+  <option value="Mechanical Engineering">Mechanical Engineering</option>
+  <option value="Industrial & Manufacturing Engineering">Industrial & Manufacturing Engineering</option>
+  <option value="Chemical Engineering">Chemical Engineering</option>
+            </select>
+         
+            <label for="Merit-Input">Merit Of the Field 2025: </label>
+            <input id="merit-input" type="number" placeholder="Merit">
+</div>
+
+        <button onclick="CalculateScore()">Calculate.</button>
+    </div>
+
+    <div class="card" id="result-card">
+        <h1>You need to score</h1>
+        <h1 id="score" class="scoreNeeded">
+        </h1>
+        <h2 id="tagline">Jao mehnat kro</h2>
+
+        <p>These reults are estimations based on 2025 Merit list, you will be admitted based on 2026 merit list which will come after the exams.</p>
+
+        <button onclick="Return()">Back</button>
+    
+    </div>
+    <span class="foot">Developed by <a href="https://www.instagram.com/oohsorry_">Syed Kashan Shah</a></span>
+
+</body>
+</html>
