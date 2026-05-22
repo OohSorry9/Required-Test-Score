@@ -64,6 +64,8 @@ function CalculateScore(){
 
     reqScore = (5*y - 2*XiScore)/3
 
+      document.getElementById('field').innerText = fieldSelector.value
+
     if(reqScore >= 100) document.getElementById('tagline').innerText = "Choro Dunyawi cheezen han."
     document.getElementById('score').innerText = reqScore.toFixed(2)
 
