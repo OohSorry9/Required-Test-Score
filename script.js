@@ -73,7 +73,6 @@ function CalculateScore(){
 }
 
 function Return(){
-    Merit = undefined
     console.log(fieldSelector.value)
 
     resultCard.style.display = "none"
